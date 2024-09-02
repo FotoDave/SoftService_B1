@@ -1,0 +1,798 @@
+/* Main page d'accueil */
+.flexCol{
+	display: flex;
+	flex-direction: column;
+}
+
+.flexRow{
+	display: flex;
+	flex-direction: row;
+}
+
+.flexCenter{
+	display: flex;
+	justify-content: center;
+}
+/*position*/
+.position{
+	margin-top: 15px;
+	margin-bottom: 10px;
+	margin: 0 auto;
+}
+
+.mainAccueil{
+	flex: 1;
+	max-width: 100%;
+	background-color: #f4f4f4;
+	margin: 0;
+}
+
+.sectionImageAccueil{
+	background-image: url("../imagesSiteWeb/accueil2.jpg");
+	height: 80vh;
+	color: white;
+	max-width: 100%;
+}
+
+.divAcceuil{
+	padding: 80px;
+	text-align: center;
+}
+
+.titreImage{
+	font-size: 70px;
+	margin: 0;
+	margin-bottom: 75px;
+}
+
+.divAcceuil p{
+	font-size: 20px;
+}
+
+.sectionServicesAccueil{
+	display: flex;
+	flex-wrap: wrap;
+	background-color: gray;
+	justify-content: space-evenly;
+	height: 40vh;
+	background-color: #DEF1FC;
+	padding-bottom: 100px;
+}
+
+.articleServicesAccueil{
+	/*flexCol*/
+	flex-basis: calc(100% / 4);
+	align-items: center;
+	padding: 10px;
+	border: 1px solid #ccc;
+	background-color: #BDE0FF;
+	border-radius: 10px;
+}
+
+.titreServiceAccueil{
+	text-align: center;
+	background-color: #DEF1FC;
+	font-size: 40px;
+	margin: 0;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+.imageServiceAccueil{
+	height: 60px;
+}
+
+.articleServicesAccueil h2{
+	font-size: 25px;
+	margin-bottom: 0;
+}
+
+.articleServicesAccueil p{
+	text-align: center;
+}
+
+.centre{
+	text-align: center;
+}
+
+.modifierActu{
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+.figureService{
+	background-color: white;
+	border-radius: 20px;
+	max-width: 20%;
+	/*flexCenter*/
+	margin-top: 40px;
+}
+
+
+.sectionActuAccueil{
+	/*flexRow*/
+	background-color: #DCDDDD;
+	justify-content: space-evenly;
+	height: 45vh;
+	padding-bottom: 50px;
+}
+
+.articleActuAccueil{
+	/*flexCol*/
+	flex-basis: calc(40% - 20px);
+	align-items: center;
+	background-color: #ECECEC;
+	margin: 20px;
+	padding-top: 30px;
+	border-radius: 7px;
+}
+
+.articleActuAccueil p,
+.articleActuAccueil a{
+	font-size: 11px;
+}
+
+.articleActuAccueil h2{
+	margin-bottom: 0px;
+}
+
+.titreActuAccueil{
+	text-align: center;
+	font-size: 40px;
+	margin: 0;
+	padding-top: 50px;
+	padding-bottom: 35px;
+	background-color: #DCDDDD;
+}
+
+.imageActuAccueil h2{
+	margin: 0;
+	max-width: 20%;
+}
+
+.imageActuAccueil{
+	max-width: 60%;
+	height: 150px;
+	border-radius: 10px;
+}
+
+/*Styles de la page de Connexion*/
+
+.bodyConnexion{
+	background-color: #75b1ea;
+}
+
+.sectionConnexion{
+	background-color: white;
+	border-radius: 8px;
+	padding: 20px;
+	max-width: 30%;
+	margin: 0 auto;
+	margin-top: 80px;
+}
+
+.formConnexion{
+	/*flexCol*/
+	align-items: center;
+}
+
+.h1Connexion{
+	margin-bottom: 20px;
+	font-family: Arial, sans-serif;
+	font-weight: bold;
+	font-size: 30px;
+}
+
+.champs {
+	width: 80%;
+	padding: 10px;
+	margin: 8px 0;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+}
+
+.boutonConnexion{
+	max-width: 50%;
+	padding: 10px;
+	border-radius: 4px;
+	font-size: 16px;
+	background-color: #1a70d0;
+	border: none;
+	margin-top: 15px;
+	margin-bottom: 10px;
+	color: white;
+}
+
+.boutonConnexion:hover{
+	background-color: #5da3f2;
+}
+
+
+
+
+/*Style de la page de Contact*/
+
+.body {
+	/*flexCol*/
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+	min-height: 100vh;
+}
+
+.menu {
+	background-color: #7bb5f7;
+	padding-right: 10px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.logoEntete{
+	height: 85px;
+	margin: 0;
+	padding-left: 10px;
+	padding-bottom: 5px;
+}
+
+.itemsMenu{
+	display: flex;
+	list-style: none;
+	gap: 30px;
+}
+
+.menu a {
+	color: #0e4b83;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.menu a:hover{
+	color: #fff;
+}
+
+.mainContact {
+	display: flex;
+	justify-content: space-evenly;
+	padding-top: 50px;
+	padding-bottom: 20px;
+	background-color: #f4f4f4;
+	flex: 1;
+}
+
+.formContact{
+	/*flexCol*/
+	padding: 20px;
+	background-color: #f4f4f4;
+	border-radius: 8px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.flWrap{
+	flex-wrap: wrap;
+}
+
+
+.formContact input[type="text"],
+.formContact input[type="date"],
+.formContact input[type="password"],
+.formContact textarea,
+.formContact input[type="radio"],
+.formContact select{
+	max-width: 100%;
+	padding: 10px;
+	margin-bottom: 16px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+}
+
+.boutonContact{
+	max-width: 30%;
+	padding: 10px;
+	border-radius: 4px;
+	font-size: 16px;
+	background-color: #0e4b83;
+	border: none;
+	color: white;
+	/*position*/
+}
+
+.boutonContact:hover{
+	background-color: #5f99ce;
+}
+
+.sectionContact {
+	flex-basis: calc(40% - 20px);
+}
+
+.imgContact{
+	height: 150px;
+	max-width: 50%;
+	margin: 0 auto;
+}
+
+.divInfos {
+	/*flexCenter*/
+	align-items: center;
+	margin: 10px;
+	list-style: none;
+}
+.divInfos li{
+	margin: 5px;
+}
+
+.divInfos p{
+	margin-top: 15px;
+	margin-left: 20px;
+}
+
+.divInfos img{
+	height: 40px;
+}
+
+.articleContact{
+	/*flexCol*/
+	align-items: center;
+	margin: 10px;
+}
+
+.footer{
+	/*flexCenter*/
+	background-color: black;
+	color: white;
+	font-family: Arial, sans-serif;
+	font-size: 15px;
+}
+
+.footer p{
+	padding-top: 5px;
+	font-weight: bold;
+}
+
+
+
+
+/*Style Ajout des départements*/
+.mainAjoutDep{
+	flex: 1;
+	/*flexCenter*/
+	max-width: 100%;
+	gap: 50px;
+	padding-top: 50px;
+	padding-bottom: 20px;
+	background-color: #f4f4f4;
+}
+
+.main{
+	flex: 1;
+	/*flexCenter*/
+	padding-top: 50px;
+	padding-bottom: 20px;
+	background-color: #f4f4f4;
+}
+
+.boutonAjouter{
+	flex-basis: calc(20% - 10px );
+	padding: 10px;
+	border-radius: 4px;
+	font-size: 16px;
+	background-color: #2DF01D;
+	border: none;
+	color: white;
+	/*position*/
+}
+
+.boutonAjouter:hover{
+	background-color: #86FE7C;
+}
+
+.boutonAnnuler{
+	flex-basis: calc(20% - 10px );
+	padding: 10px;
+	border-radius: 4px;
+	font-size: 16px;
+	background-color: #F93208;
+	border: none;
+	color: white;
+	/*position*/
+}
+
+.boutonAnnuler:hover{
+	background-color: #FD9680;
+}
+
+.formAjoutDep{
+	/*flexCol*/
+	padding: 20px;
+	background-color: #f4f4f4;
+	border-radius: 8px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.sectionAjoutDep{
+	max-width: 50%;
+}
+
+.sectionActualite{
+	flex-basis: calc(50% - 20px);
+	padding-bottom: 25px;
+}
+
+.formActualite{
+	/*flexCol*/
+	padding: 20px;
+	background-color: #f4f4f4;
+	border-radius: 8px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.imgActualite{
+	border-radius: 8px;
+	flex-basis: calc(45% - 10px);
+	height: 85px;
+}
+
+.sectionDepartement{
+	flex-basis: calc(50% - 20px);
+}
+
+.divAjoutDep{
+	display: flex;
+	justify-content: space-between;
+	margin-top: 15px;
+}
+
+.formAjoutDep h1{
+	text-align: center;
+}
+
+.formAjoutDep input[type="text"]{
+	max-width: 100%;
+	padding: 10px;
+	margin-bottom: 16px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+}
+
+
+
+
+/* Style Ajouter Article */
+
+
+/* Style Consulter départements */
+.articleListeDep{
+	display: flex;
+	justify-content: space-between;
+}
+
+.divListeDep{
+	/*flexRow*/
+	gap: 25px;
+	padding: 10px;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.divListeDep h1{
+	font-size: 35px;
+	text-align: center;
+}
+
+.boutonAnnulerDep{
+	font-size: 16px;
+	display: inline-block;
+	padding: 10px 20px;
+	color: #fff;
+	text-decoration: none;
+	border-radius: 4px;
+	border: none;
+	background-color: #F93208;
+	/*position*/
+}
+
+.boutonAnnulerDep:hover{
+	background-color: #FD9680;
+}
+
+.boutonAjouterDep{
+	font-size: 16px;
+	display: inline-block;
+	padding: 10px 20px;
+	color: #fff;
+	text-decoration: none;
+	border-radius: 4px;
+	background-color: #2DF01D;
+	/*position*/
+}
+
+.boutonAjouterDep:hover{
+	background-color: #86FE7C;
+}
+
+.boutonModifierDep{
+	font-size: 16px;
+	display: inline-block;
+	padding: 10px 20px;
+	color: #fff;
+	text-decoration: none;
+	border-radius: 4px;
+	border: none;
+	background-color: #0e4b83;
+	/*position*/
+}
+
+.boutonModifierDep:hover{
+	background-color: #5f99ce;
+}
+
+/* Style consultation d'une actualité */
+
+.sectionActualite{
+	flex-basis: calc(50% - 20px);
+}
+
+.sectionListeActualite{
+	flex-basis: calc(70% - 20px);
+	margin-bottom: 30px;
+}
+
+.sectionListeActualite h1{
+	font-size: 35px;
+	text-align: center;
+}
+
+.boutonActualite{
+	flex-basis: calc(20% - 10px );
+	padding: 10px;
+	border-radius: 4px;
+	font-size: 16px;
+	background-color: #0e4b83;
+	border: none;
+	color: white;
+	/*position*/
+}
+
+.boutonActualite:hover{
+	background-color: #5f99ce;
+}
+
+.datePublication{
+	text-align: right;
+	font-size: 13px;
+	font-weight: bold;
+	margin-top: 15px;
+}
+
+.texteArticle{
+	margin-top: 15px;
+	text-align: justify;
+}
+
+.articleActualite{
+	/*flexCol*/
+	flex-basis: 40%;
+	/*justify-content: space-between;*/
+	margin-top: 30px;
+	border-radius: 8px;
+	padding: 20px;
+	background-color: #DFDFDF;
+}
+
+.articleActualite h2{
+	margin-bottom: 15px;
+	text-align: center;
+}
+
+.articleActualite a{
+	margin-top: 0;
+}
+
+.figureEquipe{
+	display: block;
+	width: 80%;
+	margin: 0;
+	padding: 10px;
+	overflow: hidden;
+}
+
+figure{
+	display: block;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+.imgArticle{
+	display: block;
+	width: 100%;
+	height: auto;
+	border-radius: 10px;
+}
+
+.divArticle{
+	/*flexRow*/
+	align-items: center;
+	justify-content: space-between;
+	max-width: 30%;
+}
+
+.sectionActualite h1{
+	font-size: 35px;
+	text-align: center;
+}
+
+.articleFiltre{
+	/*flexRow*/
+	justify-content: center;
+	gap: 20px;
+	align-items: center;
+	padding: 8px;
+	margin-bottom: 15px;
+	background-color: #C2E7FF;
+}
+
+.bloc1{
+	flex-basis: calc(30% - 20px);
+	/*flexCenter*/
+	gap: 5px;
+	align-items: center;
+}
+
+.bloc2{
+	flex-basis: calc(50% - 20px);
+	/*flexCenter*/
+	gap: 2px;
+	align-items: center;
+}
+
+.bloc1 select{
+	flex-basis: calc(40% - 5px);
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+}
+
+.bloc2 input[type="text"]{
+	flex-basis: calc(75% - 5px);
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+}
+
+.bloc3{
+	flex-basis: calc(15% - 20px);
+	/*flexCenter*/
+}
+
+.boutonFiltre{
+	flex-basis: 80%;
+	padding: 10px;
+	border-radius: 4px;
+	font-size: 16px;
+	background-color: #0e4b83;
+	border: none;
+	color: white;
+	margin: 0 auto;
+}
+
+.boutonFiltre:hover{
+	background-color: #3C8AD0;
+}
+
+
+/* Présentation Equipe */
+
+.photoProfil{
+	max-width: 100%;
+	border-radius: 5px;
+}
+
+.sectionEquipe h1{
+	font-size: 35px;
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+.sectionProfil{
+	/*flexRow*/
+	justify-content: space-evenly;
+	margin-bottom: 20px;
+}
+
+.articleProfil{
+	/*flexCol*/
+	flex-basis: 30%;
+	align-items: center;
+	background-color: white;
+	border-radius: 8px;
+	border: 1px solid #ccc;
+	margin: 5px;
+	margin-top: 15px;
+	/*margin-bottom: 30px;*/
+}
+
+.sectionEquipe{
+	max-width: 65%;
+}
+
+.titreEquipe{
+	margin: 0;
+	font-size: 25px;
+	margin-top: 20px;
+	text-align: center;
+}
+
+.articleProfil p{
+	font-size: 16px;
+}
+
+.articleProfil a{
+	font-size: 14px;
+	margin-bottom: 10px;
+}
+
+.titreProfil{
+	margin: 0;
+	font-size: 18px;
+	text-align: center;
+}
+
+.container {
+	max-width: 60%;
+	margin: auto;
+	padding: 20px;
+	display: flex;
+}
+.right {
+	flex: 1;
+	padding-right: 20px;
+}
+.left {
+	flex-basis: 30%;
+	margin: 15px;
+}
+
+.info {
+	margin-bottom: 20px;
+}
+.info label {
+	font-weight: bold;
+}
+.photo {
+	max-width: 100%;
+	height: auto;
+	display: block;
+	margin: 0 auto;
+	padding-bottom: 15px;
+}
+
+.visible {
+	background-color: #00ff00;
+	color: #ffffff;
+	padding: 5px;
+}
+
+.nonVisible {
+	background-color: #E10505;
+	color: #ffffff;
+	padding: 5px;
+}
+
+.confirmation {
+	background-color: #f8f9fa; /* Fond clair pour le conteneur */
+	border: 1px solid #ccc; /* Bordure subtile */
+	padding: 20px; /* Espacement intérieur */
+	border-radius: 8px; /* Coins arrondis */
+	width: 300px; /* Largeur fixe, ajustez selon vos besoins */
+	margin: 20px auto; /* Centrage et espace autour du conteneur */
+	box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Ombre subtile pour le relief */
+}
+
+/* Style pour le texte de confirmation */
+.message {
+	font-size: 16px; /* Taille du texte */
+	color: #333; /* Couleur du texte */
+	margin-bottom: 20px; /* Espacement avant les boutons */
+}
